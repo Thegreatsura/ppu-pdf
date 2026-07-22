@@ -1,6 +1,6 @@
 {
   "name": "ppu-pdf",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "description": "Easily extract text from digital PDF files with coordinate and font size included, and optionally group text by lines or render scanned pdf to canvas/png.",
   "keywords": [
     "pdf-reader",
@@ -51,7 +51,8 @@
     "@types/bun": "latest",
     "@types/uglify-js": "latest",
     "mitata": "latest",
-    "ppu-paddle-ocr": "^4.0.2",
+    "onnxruntime-node": "1.26.0",
+    "ppu-paddle-ocr": "^6.2.0",
     "prettier": "^3.8.1",
     "tsx": "latest",
     "typescript": "latest",
@@ -62,9 +63,12 @@
     "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-pdf.git"
   },
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.69",
+    "@napi-rs/canvas": "^1.0.2",
     "@toon-format/toon": "^1.0.0",
     "mupdf": "^1.26.2",
     "pdfjs-dist": "4.9.155"
-  }
+  },
+  "trustedDependencies": [
+    "onnxruntime-node"
+  ]
 }
