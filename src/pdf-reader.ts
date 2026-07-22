@@ -550,7 +550,7 @@ export class PdfReader extends PdfReaderCommon {
 
       // We use a CID font to support Unicode / CJK characters fully
       let font = new mupdf.Font(options.fontName || "Helvetica");
-      
+
       // Use addCJKFont for broad language support, specifying Adobe-Japan1 or zh-Hant as the fallback pool
       let fontResource = pdf.addCJKFont(font, "ja", 0, false);
 
@@ -579,7 +579,7 @@ export class PdfReader extends PdfReaderCommon {
         // When using CID fonts, text strings must be passed as UTF-16BE hex strings <xxxx>
         let hexString = "";
         for (let i = 0; i < word.text.length; i++) {
-          const hex = word.text.charCodeAt(i).toString(16).padStart(4, '0');
+          const hex = word.text.charCodeAt(i).toString(16).padStart(4, "0");
           hexString += hex;
         }
 
