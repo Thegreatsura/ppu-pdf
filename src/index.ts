@@ -1,4 +1,4 @@
-export { PdfReader } from "./pdf-reader";
+export { PdfReader } from "./pdf-reader.js";
 export { PdfReaderLegacy } from "./pdf-reader-legacy.js";
 
 export { CONSTANT } from "./pdf.constant.js";
